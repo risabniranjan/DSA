@@ -29,9 +29,6 @@ int dequeue() {
     else {
         printf("Dequeued %d from queue\n", queue[front]);
         front++;
-        for (int i = front; i <= rear; i++) {
-            queue[i-1] = queue[i];
-        }
     }
 }   
 
